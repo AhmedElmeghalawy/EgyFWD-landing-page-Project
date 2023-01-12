@@ -94,16 +94,12 @@ var topPageCustomElement =  document.getElementById("topOfPage");
 
 
 
-
-
-
-
-//notes for future me when updating the project😀
 /**
+notes for future features to add to the project😀:
 
-Stuff that still required are:
--Adding transparency effect to to nav bar,
--Making the scroll button a bit modern it looks like a  button from the 90s,
--The github(version control) thingy.
+-Adding transparency effect to nav bar when stopping scrolling.
+-Better commenting.
+-Editing the Readme.md File.
+-Updating the scroll-to-top button.
 
  */
