@@ -1,3 +1,6 @@
+
+
+
 //getting the navBar element, so we would later append to it new created nav buttons acording to how many section on the page.
 let navBar = document.querySelector("#navbar__list");
 
@@ -6,6 +9,7 @@ let sections = document.getElementsByTagName("section");
 
 // let addNewSectionButton = document.querySelector("#add_new_section");
 let sectionsParent = document.querySelector("#sectionsParent");
+
 
 //first we populate the nave bar based on how many sections there are in the html page..
 PopulateNavBar();
@@ -107,10 +111,13 @@ document.addEventListener("scroll", function () {
 
 //addin ActiveClass to the current viewd element(Section Element)
 function MakeCurrentViewdElementOnScreenActive() {
-  let topValue = 150;
-  let bottomValue = 150;
+  let topValue = 220;
+  let bottomValue = 350;
   for (let index = 0; index < sections.length; index++) {
     let sectionElementAreaBox = sections[index].getBoundingClientRect();
+
+    // console.log(sections[index].dataset.nav +" top = "+sectionElementAreaBox.top);
+    // console.log(sections[index].dataset.nav +" top = "+sectionElementAreaBox.bottom);
 
     if (
       sectionElementAreaBox.top <= topValue &&
@@ -140,36 +147,5 @@ toTopButton.onclick = function () {
   topPageCustomElement.scrollIntoView({ behavior: "smooth" });
 };
 
-/**
- * End Global letiables
- * Start Helper Functions
- *
- */
 
-/**
- * End Helper Functions
- * Begin Main Functions
- *
- */
-// build the nav
-// Add class 'active' to section when near top of viewport
-// Scroll to anchor ID using scrollTO event
-// Make sections active
-/**
- * End Main Functions
- * Begin Events
- *
- */
-// Build menu
-// Scroll to section on link click
-// Set sections as active
 
-/**
-notes for future features to add to the project😀:
-
--Adding transparency effect to nav bar when stopping scrolling.
--Better commenting.
--Editing the Readme.md File.
--Updating the scroll-to-top button.
-
- */

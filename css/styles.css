@@ -166,7 +166,7 @@ section:nth-of-type(odd) .landing__container::before {
 section:nth-of-type(even) .landing__container::before {
     content: '';
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.4) 100%);
     position: absolute;
     top: 3em;
     right: 3em;
@@ -181,7 +181,7 @@ section:nth-of-type(even) .landing__container::before {
 section:nth-of-type(3n) .landing__container::after {
     content: '';
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.4) 100%);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -196,7 +196,7 @@ section:nth-of-type(3n) .landing__container::after {
 section:nth-of-type(3n + 1) .landing__container::after {
     content: '';
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.4) 100%);
     position: absolute;
     right: 20vw;
     bottom: -5em;
@@ -223,7 +223,6 @@ section:nth-of-type(3n + 1) .landing__container::after {
 
 .topButtonParentId.topButtonId {
 
-    
     background:   rgb(5, 12, 73);
     text-align: center;
     padding: 5;
@@ -249,7 +248,7 @@ customDiv {
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 section.your-active-class .landing__container::before {
