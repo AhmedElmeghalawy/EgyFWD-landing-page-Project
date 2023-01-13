@@ -91,6 +91,12 @@ section {
     transition: ease 0.3s all;
 }
 
+.navbar__menu .highlight-link {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
 .add_new_section {
     align-content: flex-start;
     display: inline-block;
