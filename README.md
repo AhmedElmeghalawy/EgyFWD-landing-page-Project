@@ -2,16 +2,44 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Instructions](#instructions)
-* [Instructions](#instructions)
-* [Instructions](#instructions)
+- [Landing Page Project](#landing-page-project)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Functionality Features](#functionality-features)
+  - [Styling Features](#styling-features)
+- [Developer](#developer)
 
-## Instructions
 
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Introduction
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+- this project(Landing Page project) is an example of a simple Landing Page.
+
+- It's was provided by Egypt-FWD for the front-end proffessional track studets.
+
+
+
+## Functionality Features
+
+- Dynamic navigation bar based on the page's sections.
+
+- jumping into desired secions using the navigation bar.
+
+- A back-to-top button at the end of the page.
+
+- An Add button at the Navigation bar to add new sections to the page.
+
+
+
+## Styling Features
+- highlighting the viewed section Element on the page with a dark gradient with transparency.
+
+- highlighting coresponding navigation bar  of the viewed section on the page.
+
+ 
+
+
+
+# Developer
+**[Ahmed El Meghalawy](https://github.com/AhmedElmeghalawy/)**

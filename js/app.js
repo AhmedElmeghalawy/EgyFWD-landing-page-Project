@@ -139,7 +139,7 @@ function MakeCurrentViewdElementOnScreenActive() {
 }
 
 //getting the scrolling to the Top Button
-let toTopButton = document.getElementById("topButtonId");
+let toTopButton = document.getElementById("topButtonParentId");
 let topPageCustomElement = document.getElementById("topOfPage");
 //calling to the built-in scrollIntoView when clicking event happens
 // {behavior: "smooth"} adds smoothing transition while going to the top of the page.
