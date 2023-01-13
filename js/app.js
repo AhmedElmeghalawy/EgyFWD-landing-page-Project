@@ -41,7 +41,7 @@ document.addEventListener("scroll", function() { MakeCurrentViewdElementOnScreen
 
 //addin ActiveClass to the current viewd element(Section Element)
 function MakeCurrentViewdElementOnScreenActive(){
-    var topValue = 150;
+    var topValue = window.innerHeight;
     var bottomValue = 150;
     for (let index = 0; index < sections.length; index++) {
         let sectionElementAreaBox = sections[index].getBoundingClientRect();

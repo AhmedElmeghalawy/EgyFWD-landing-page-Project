@@ -196,14 +196,17 @@ section:nth-of-type(3n + 1) .landing__container::after {
 
 #topButtonParentId {
     text-align: center;
+
     padding: 15;
     animation: opacityAnimation 3s;
+    padding: 20;
+    border: 5px solid black;
+    margin: 20;
+    cursor: pointer;
 }
 
-.topButtonId {
-    padding: 15;
-    margin: 30;
-    cursor: pointer;
+.topButtonParentId.topButtonId {
+
     
     background:   rgb(5, 12, 73);
     text-align: center;
@@ -214,8 +217,8 @@ section:nth-of-type(3n + 1) .landing__container::after {
 }
 #topButtonId:hover {
     cursor: pointer;
-    background:   rgb(113, 177, 146,1);
-    text-align: center;
+    /* background:   rgb(113, 177, 146,1);
+    text-align: center; */
 }
 
 customDiv {
