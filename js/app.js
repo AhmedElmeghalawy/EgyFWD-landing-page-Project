@@ -2,13 +2,12 @@
 
 
 //getting the navBar element, so we would later append to it new created nav buttons acording to how many section on the page.
-let navBar = document.querySelector("#navbar__list");
+const navBar = document.querySelector("#navbar__list");
 
 //getting the current sections on the html page, And based on how many of them, we would create the nav buttons.
-let sections = document.getElementsByTagName("section");
+const sections = document.getElementsByTagName("section");
 
-// let addNewSectionButton = document.querySelector("#add_new_section");
-let sectionsParent = document.querySelector("#sectionsParent");
+const sectionsParent = document.querySelector("#sectionsParent");
 
 
 //first we populate the nave bar based on how many sections there are in the html page..
@@ -21,14 +20,14 @@ createAddNewSectionButton();
 let newSectionCount = 0;
 function createAddNewSectionButton() {
   //creating the "adding new section button"
-  let addNewSectionButton = createNavButton("[+]");
+  const addNewSectionButton = createNavButton("[+]");
 
   //adding the "createSection" method to the button when we click it
   addNewSectionButton.onclick = function () {
     newSectionCount++;
 
     //creating new section and adding a number to it for the navigationButton to use later
-    let newSection = createSection("Section " + newSectionCount);
+    const newSection = createSection("Section " + newSectionCount);
     //appending the new section to "sectionsParent"
     sectionsParent.appendChild(newSection);
 
@@ -57,7 +56,7 @@ function PopulateNavBar() {
   for (let index = 0; index < sections.length; index++) {
     // creating a new button using a function and passing the argument that passes the name and the function that we want to call when clickin gon that button.
     // the {behavior:"smooth"} part is adding a smooth transition animation when scrolling.
-    let newButton = createNavButton(
+    const newButton = createNavButton(
       sections[index].getAttribute("data-nav"),
       function () {
         sections[index].scrollIntoView({ behavior: "smooth" });
@@ -70,7 +69,7 @@ function PopulateNavBar() {
 }
 
 function createSection(SectionName) {
-  let container = document.createElement("section");
+  const container = document.createElement("section");
   container.id = SectionName.split(" ").join("");
   container.dataset.nav = SectionName.split(" ").join("");
 
@@ -85,9 +84,9 @@ function createSection(SectionName) {
 }
 
 function createNavButton(Name, ExcuteOnClick) {
-  let sectionNavigationButton = null;
+
   //create button element
-  sectionNavigationButton = document.createElement("li");
+ const sectionNavigationButton = document.createElement("li");
   //adding the class name "menu__link" in the css file to style the element
   sectionNavigationButton.classList.add("menu__link");
   sectionNavigationButton.setAttribute("data-nav", Name);
@@ -111,10 +110,10 @@ document.addEventListener("scroll", function () {
 
 //addin ActiveClass to the current viewd element(Section Element)
 function MakeCurrentViewdElementOnScreenActive() {
-  let topValue = 220;
-  let bottomValue = 350;
+  const topValue = 220;
+  const bottomValue = 350;
   for (let index = 0; index < sections.length; index++) {
-    let sectionElementAreaBox = sections[index].getBoundingClientRect();
+    const sectionElementAreaBox = sections[index].getBoundingClientRect();
 
     // console.log(sections[index].dataset.nav +" top = "+sectionElementAreaBox.top);
     // console.log(sections[index].dataset.nav +" top = "+sectionElementAreaBox.bottom);
@@ -139,8 +138,8 @@ function MakeCurrentViewdElementOnScreenActive() {
 }
 
 //getting the scrolling to the Top Button
-let toTopButton = document.getElementById("topButtonParentId");
-let topPageCustomElement = document.getElementById("topOfPage");
+const toTopButton = document.getElementById("topButtonParentId");
+const topPageCustomElement = document.getElementById("topOfPage");
 //calling to the built-in scrollIntoView when clicking event happens
 // {behavior: "smooth"} adds smoothing transition while going to the top of the page.
 toTopButton.onclick = function () {
