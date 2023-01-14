@@ -22,6 +22,10 @@ function createAddNewSectionButton() {
   //creating the "adding new section button"
   const addNewSectionButton = createNavButton("[+]");
 
+  //when creating the buttons the hilighting class goes away because we set innet html to "" of navbar so we call the methoud below to reffresh the sections elements
+  //and assigne them again to their coresponding nav button andj by that the coresponding button get the hilightet link calss agin which fix the bug.
+  MakeCurrentViewdElementOnScreenActive();
+
   //adding the "createSection" method to the button when we click it
   addNewSectionButton.onclick = function () {
     newSectionCount++;
